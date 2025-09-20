@@ -1,0 +1,49 @@
+name: invisible_maze
+description: The Invisible Maze - rage memory/puzzle
+publish_to: "none"
+
+version: 1.0.0+3
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.1.0
+  flutter_launcher_icons: ^0.14.4
+  msix: ^3.16.12
+  shared_preferences: ^2.2.3
+  firebase_core: ^3.0.0
+  cloud_firestore: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  windows:
+    generate: true
+  image_path: assets/icon/app_icon.png
+  remove_alpha_ios: true
+
+msix_config:
+  display_name: InvisibleMaze
+  publisher_display_name: Simon Chitepo
+  identity_name: com.cypher.invisiblemaze
+  msix_version: 1.0.0.0
+  logo_path: assets/icon/app_icon.png
+  capabilities: "internetClient"
+
+  # REQUIRED FOR YOUR OWN CERT:
+  publisher: CN=Simon Chitepo
+  certificate_path: C:\Users\simon\AndroidStudioProjects\invisiblemaze\signing\InvisibleMaze-TestCert.pfx
+  certificate_password: 1234

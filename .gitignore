@@ -1,0 +1,114 @@
+﻿# ============================================
+# BLIND MAZE - COMPLETE .GITIGNORE
+# ============================================
+
+# Build outputs (NEVER commit these)
+build/
+build.windows/
+build.ios/
+build.android/
+build.web/
+Build/
+
+# Platform-specific build folders
+windows/
+linux/
+macos/
+ios/
+web/
+
+# Installer files
+installer/
+*.msi
+*.exe
+*.msix
+*.appx
+*.cab
+
+# Flutter generated
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+*.lock
+*.pid
+
+# Firebase SDK (large binaries)
+extracted/
+firebase_cpp_sdk/
+firebase_cpp_sdk_*.zip
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Debug symbols
+*.pdb
+*.ilk
+*.exp
+*.dbg
+*.sym
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.app
+*.ipa
+*.apk
+*.aab
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store
+*.swp
+*.swo
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Environment
+.env
+*.env
+keys/
+*.p12
+*.pem
+*.key
+*.cert
+
+# User files
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Coverage
+coverage/
+*.lcov
+
+# Android
+/android/.gradle/
+/android/app/build/
+/android/local.properties
+/android/*.iml
+/android/build/
+
+# VS Code
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# Backup files
+*.bak
+*.backup
+*~
